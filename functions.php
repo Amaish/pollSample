@@ -64,24 +64,5 @@ function getManyByValue($table, $column, $arguments)
     }
 }
 
-// sends message for verification
-function sendMessage($phoneNumber,$message)
-{
-    require_once('smsGateway.php');
-    $username   = "sandbox";
-    $apikey     = "12b82348c95eeb2e1fac5fe36d5f20c5e5f55140950bb348a19b53632a497d38";
-    $recipients = $phoneNumber;
-    $message    = $message;
-    $from = "moonlight";
-    $gateway    = new AfricasTalkingGateway($username, $apikey);
-    try 
-    {
-        $results = $gateway->sendMessage($recipients, $message, $from);
-    }
-        catch ( AfricasTalkingGatewayException $e )
-    {
-        
-    }
-}
 
 ?>
