@@ -19,6 +19,8 @@ while($thisresult = mysqli_fetch_array($query))
     echo "<br>";
     
     $piedata .= '{ label: "'.$thisresult['text'].'",y: '.$percent_votes.', legendText: "'.$thisresult['text'].'"  },';
+    // echo $piedata;
+    // echo "<br>";
 
     
 }
