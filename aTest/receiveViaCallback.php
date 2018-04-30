@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"] . '/MainaTest/dbConnector.php');
+include_once($_SERVER["DOCUMENT_ROOT"] . '/MainaTest/pollSample/dbConnector.php');
  $from = $_POST['from'];
  $to = $_POST['to'];
  $text = $_POST['text'];
